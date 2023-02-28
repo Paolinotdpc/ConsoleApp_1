@@ -11,7 +11,7 @@ namespace ConsoleApp_1
         //}
 
         /*
-         -Creare 100 oggetti che rapprewsentino
+         -Creare 100 oggetti che rappresentino
             prodotti diversi con le seguenti caratteristiche:
             - Nome 
             - Costo
@@ -41,28 +41,49 @@ namespace ConsoleApp_1
             le properties dei 10 oggetti;
         */
 
+        //static void Main(string[] args)
+        //{
+        //    List<Games> collection = new list<Games>();
+        //    for (int i = 1; i <= 10; i++)
+        //    {
+        //        Games games = new Games();
+        //        games.Name = "Name" + i;
+        //        games.Year = i;
+
+        //        collection.Add(games);
+        //    }
+
+        //    //for (int i = 0; i < collection.Count; i++)
+        //    //{
+        //    //    Console.WriteLine(collection[i].Name + " " + collection[i].Year);
+        //    //}
+
+        //    foreach (Games games in collection)
+        //        Console.WriteLine(games.Name +" "+ games.Year);
+
+        /*
+         
+        - Chiedere all'utente i suoi dati anagrafici
+        (es. nome, cognome, età ....)
+        - Creare una classe che abbia le properties
+        chieste all'utente 
+        - istanziare un oggetto con i dati chiesti
+          all'utente
+        -stampare le properties su schermo dell'oggetto
+        */
+
         static void Main(string[] args)
         {
-            List<Games> collection = new list<Games>();
-            for (int i = 1; i <= 10; i++)
-            {
-                Games games = new Games();
-                games.Name = "Name" + i;
-                games.Year = i;
+            List<Anagrafica> persone = new List<Anagrafica>();
+            Anagrafica utente = new Anagrafica();
+            utente.Name = 
 
-                collection.Add(games);
-            }
 
-            //for (int i = 0; i < collection.Count; i++)
-            //{
-            //    Console.WriteLine(collection[i].Name + " " + collection[i].Year);
-            //}
 
-            foreach (Games games in collection)
-                Console.WriteLine(games.Name +" "+ games.Year);
-                           
         }
-
+                           
+        
+       
         
     }
 }
