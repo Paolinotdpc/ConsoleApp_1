@@ -95,12 +95,43 @@ namespace ConsoleApp_1
 
        */
 
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
+
+        //}
+
+        /* 
+         -creare una classe Animale con caratteristiche:
+            -razza
+            -eta
+            -colore
+        -generare un numero casuale tra 1 e 5
+        -creare  n oggetti di tipo animale equivalenti al numero estratto 
+        -attribuire valori qualsiasi a ciascun animale, ma fare in modo che il colore possa essere 
+         solo Bianco o Nero.
+        */
+
+       static void Main(string[] args)
+        {
+            List<Animals> animale = new List<Animals>();
+            
+            Random num = new Random();
+            
+            int numCasuale = num.Next(1,5);
+
+            for (int i = 0; i < numCasuale; i++)
+            {
+                Animals animale = new Animals();
+                      animale.razza = "Animale" + i;
+                      animale.eta = i;
+                animale.color = "colore" + i;
+
+                animale.Add(animale);
+
+            };
 
         }
-       
         
     }
 }
