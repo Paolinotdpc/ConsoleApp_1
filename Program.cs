@@ -72,17 +72,34 @@ namespace ConsoleApp_1
         -stampare le properties su schermo dell'oggetto
         */
 
+        //static void Main(string[] args)
+        //{
+        //    List<Anagrafica> persone = new List<Anagrafica>();
+        //    Anagrafica utente = new Anagrafica();
+        //    utente.Name = 
+
+
+
+        //}
+                           
+        /*Torino 14/03/2023
+
+        /*
+        - Creare una classe prodotto con le seguenti proprietà
+            - Nome
+            - Costo
+
+        - chiedere all'utente nome e costo di un prodotto e istanziarne un oggetto
+        - fare in modo che si possano settare nomi solo di lunghezza maggiore di 5 caratteri.
+        - stasmpare su schermo i valori delle properties dell'oggetto istanziato
+
+       */
+
         static void Main(string[] args)
         {
-            List<Anagrafica> persone = new List<Anagrafica>();
-            Anagrafica utente = new Anagrafica();
-            utente.Name = 
-
 
 
         }
-                           
-        
        
         
     }
