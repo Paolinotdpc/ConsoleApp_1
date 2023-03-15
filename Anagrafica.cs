@@ -8,7 +8,7 @@ namespace ConsoleApp_1
     {
         public string Name { get; set; }
         public string Surname { get; set; }
-        public int Birthday { get; set; }
+        public string Birthday { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
         public string Region { get; set; }
