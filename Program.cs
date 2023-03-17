@@ -72,18 +72,66 @@ namespace ConsoleApp_1
         -stampare le properties su schermo dell'oggetto
         */
 
-        static void Main(string[] args)
+        //static void Main(string[] args)
+        //{
+        //    List<Anagrafica> persone = new List<Anagrafica>();
+        //    Anagrafica utente = new Anagrafica();
+        //    utente.Name = 
+
+
+
+        //}
+                           
+        /*Torino 14/03/2023
+
+        /*
+        - Creare una classe prodotto con le seguenti proprietà
+            - Nome
+            - Costo
+
+        - chiedere all'utente nome e costo di un prodotto e istanziarne un oggetto
+        - fare in modo che si possano settare nomi solo di lunghezza maggiore di 5 caratteri.
+        - stasmpare su schermo i valori delle properties dell'oggetto istanziato
+
+       */
+
+        //static void Main(string[] args)
+        //{
+
+
+        //}
+
+        /* 
+         -creare una classe Animale con caratteristiche:
+            -razza
+            -eta
+            -colore
+        -generare un numero casuale tra 1 e 5
+        -creare  n oggetti di tipo animale equivalenti al numero estratto 
+        -attribuire valori qualsiasi a ciascun animale, ma fare in modo che il colore possa essere 
+         solo Bianco o Nero.
+        */
+
+       static void Main(string[] args)
         {
-            List<Anagrafica> persone = new List<Anagrafica>();
-            Anagrafica utente = new Anagrafica();
-            utente.Name = 
+            List<Animals> animale = new List<Animals>();
+            
+            Random num = new Random();
+            
+            int numCasuale = num.Next(1,5);
 
+            for (int i = 0; i < numCasuale; i++)
+            {
+                Animals animale = new Animals();
+                      animale.razza = "Animale" + i;
+                      animale.eta = i;
+                animale.color = "colore" + i;
 
+                animale.Add(animale);
+
+            };
 
         }
-                           
-        
-       
         
     }
 }
