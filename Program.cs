@@ -81,7 +81,7 @@ namespace ConsoleApp_1
 
 
         //}
-                           
+
         /*Torino 14/03/2023
 
         /*
@@ -112,26 +112,114 @@ namespace ConsoleApp_1
          solo Bianco o Nero.
         */
 
-       static void Main(string[] args)
-        {
-            List<Animals> animale = new List<Animals>();
-            
-            Random num = new Random();
-            
-            int numCasuale = num.Next(1,5);
+        //static void Main(string[] args)
+        // {
+        //     List<Animals> animale = new List<Animals>();
 
-            for (int i = 0; i < numCasuale; i++)
-            {
-                Animals animale = new Animals();
-                      animale.razza = "Animale" + i;
-                      animale.eta = i;
-                animale.color = "colore" + i;
+        //     Random num = new Random();
 
-                animale.Add(animale);
+        //     int numCasuale = num.Next(1,5);
 
-            };
+        //     for (int i = 0; i < numCasuale; i++)
+        //     {
+        //         Animals animale = new Animals();
+        //               animale.razza = "Animale" + i;
+        //               animale.eta = i;
+        //         animale.color = "colore" + i;
 
-        }
+        //         animale.Add(animale);
+
+        //}
+
+        /*esercizio Lezione del 20/03/2023
         
+        
+        - Simulare una lotteria:
+            - chiedere all'utente tre numeri
+            - estrarre 5 numneri casuali
+            - stampare su schermo se l'utente ha indovinato
+              dei numeri e quali
+        */
+
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("inserisci tre numeri a scelta: ");
+        //    int num1 = int.Parse(Console.ReadLine());
+        //    int num2 = int.Parse(Console.ReadLine());
+        //    int num3 = int.Parse(Console.ReadLine());
+
+        //    List<int> numEstratti = new List<int>();
+
+        //    for (int i = 0; i < 5; i++)
+        //    {
+
+        //        Random random = new Random();
+        //        numEstratti.Add(random.Next(1, 10));
+
+        //    }
+
+        //    for(int i = 0;i < numEstratti.Count;i++)
+        //    {
+        //        if (num1 == numEstratti[i])
+        //        {
+        //            Console.WriteLine("L'utente ha indovinato il numero: " + num1);
+        //        }
+        //        if (num2 == numEstratti[i])
+        //        {
+        //            Console.WriteLine("L'utente ha indovinato il numero: " + num2);
+        //        }
+        //        if (num3 == numEstratti[i])
+        //        {
+        //            Console.WriteLine("L'utente ha indovinato il numero: " + num3);
+        //        }
+
+
+        //    }
+
+        //}
+
+        /*
+         - Simulare una lotteria di biglietti:
+            - creare una classe giocatore
+            - creare una classe biglietto con: 
+                - luogo di acquisto
+                - Seriale
+            - permettere all'utente di comprare n biglietti 
+            - creare una lista di biglietti estraibili
+            - estrarre un biglietto della lista e stampare su schermo 
+              i dati del biglietto estratto
+            - comunicare all'utente se ha vinto
+            */
+        static void Main(string[] args)
+        {
+            
+            string  i = "a";
+            while (i != "a")
+            {
+
+                Console.WriteLine("Vuoi acquistare un biglietto? digita a per confermare q per terminare l'acquisto");
+                if (i=="a")
+                {
+                    Biglietti b = new Biglietti();
+                    b.Seriale = Guid.NewGuid();
+
+                }
+                
+                else 
+                            i = Console.ReadLine();
+            }
+        }
+       
+    	
+
+	}
+
+
+
+
+
+
+
+
     }
 }
