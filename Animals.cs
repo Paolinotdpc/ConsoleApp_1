@@ -10,6 +10,22 @@ namespace ConsoleApp_1
         public int eta { get; set; }
         public string color { get; set; }
 
+        public void startVoice()
+        {
 
+            Console.WriteLine(this.razza + " di colore " 
+                + this.color 
+                + " fa il verso");
+
+        }
+
+        public void startEat()
+        {
+
+            Console.WriteLine(this.razza + " di colore "
+                + this.color
+                + " sta Mangiando"
+                );
+        }
     }
 }
