@@ -235,36 +235,95 @@ namespace ConsoleApp_1
         //myList.Add("elemento1");
         //myList.Add("elemento2");
         //    myList.Add("elemento3");
-        static void Main(string[] args) 
+        //static void Main(string[] args) 
+        //{
+
+
+        //    Prodotto prodotto1 = new Prodotto();
+        //    prodotto1.nome = "Mele";
+        //    prodotto1.costo = 100;
+
+        //    Prodotto prodotto2 = new Prodotto();
+        //    prodotto2.nome = "Pere";
+        //    prodotto2.costo = 100;
+
+        //    Prodotto prodotto3 = new Prodotto();
+        //    prodotto2.nome = "kiwi";
+        //    prodotto2.costo = 100;
+
+        //    Distributore distributore1 = new Distributore();
+
+        //    distributore1.Add = (prodotto1);
+        //    distributore1.Add = (prodotto2);
+        //    distributore1.Add = (prodotto3);
+
+        //    distributore1.StampaProdotti();
+
+
+        //}
+
+
+
+
+        /* aggiornamento alle 7.40
+         creare una classe EssereVivente con
+            properties:
+                - specie
+                - nome
+            metodi:
+                - nutriti
+         creare una classe Vertebrato : EssereVivente con:
+            - metodi:
+                - nutriti
+                - muoviti
+         creare una classe Pianta : EssereVivente con:
+            - properties:
+                - profondità radici
+            - metodi:
+                - nutriti
+         - istanziare due oggetti di tipo Vertebrato e due di tipo Pianta,
+         valorizzarne le properties e invocarne i metodi
+         */
+        /*aggiornamento alle 21.15
+    Creare una classe madre arbitraria con:
+       - una property public
+       - una property protected
+       - una property private
+       - un metodo public
+       - un metodo protected
+       - un metodo private
+    Creare una classe figlia arbitraria che eredita dalla classe madre con:
+       - una property private
+       - un metodo private
+    Creare una classe nipote arbitraria che eredita dalla classe figlia con:
+       - una property public
+    Istanziare:
+       - un oggetto di tipo classe madre
+       - un oggetto di tipo classe figlia
+       - un oggetto di tipo classe nipote
+    Valorizzare le properties degli oggetti
+    Eseguirne i metodi
+    */
+        static void Main(string[] args)
         {
-            
 
-            Prodotto prodotto1 = new Prodotto();
-            prodotto1.nome = "Mele";
-            prodotto1.costo = 100;
+            Madre Oggetto1 = new Madre();
+            Figlia Oggetto2 = new Figlia();
+            Nipote Oggetto3 = new Nipote();
 
-            Prodotto prodotto2 = new Prodotto();
-            prodotto2.nome = "Pere";
-            prodotto2.costo = 100;
-
-            Prodotto prodotto3 = new Prodotto();
-            prodotto2.nome = "kiwi";
-            prodotto2.costo = 100;
-
-            Distributore distributore1 = new Distributore();
-
-            distributore1.Add = (prodotto1);
-            distributore1.Add = (prodotto2);
-            distributore1.Add = (prodotto3);
-
-            distributore1.StampaProdotti();
-
-
+            Oggetto1 
+                
         }
-    
+        static void Main(string[] args)
+            {
 
+
+
+            }
+        
     }
-
-
-
 }
+
+
+
+
